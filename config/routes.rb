@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   resources :zoos do
     resources :exhibits
   end
+
+  resources :exhibits do
+    resources :animals
+  end
 end
