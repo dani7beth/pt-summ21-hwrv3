@@ -1,3 +1,3 @@
 class Exhibit < ApplicationRecord
-  belongs_to :zoos
+  belongs_to :zoo
 end

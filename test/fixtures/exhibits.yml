@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  zoos: one
+  zoo: one
 
 two:
   name: MyString
-  zoos: two
+  zoo: two
