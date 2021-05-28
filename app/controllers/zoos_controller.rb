@@ -1,7 +1,7 @@
 class ZoosController < ApplicationController
   before_action :set_zoo, only: [:show, :update, :edit, :destroy]
   def index
-    @zoos = Zoo.available
+    @zoos = Zoo.all
     render component: 'Zoos', props:{zoos: @zoos}
   end
 
@@ -24,7 +24,7 @@ class ZoosController < ApplicationController
   end
 
   def edit
-    render component: 'Zoo', props: {zoo: @zoo}
+    render component: 'ZooEdit', props: {zoo: @zoo}
   end
 
   def update
