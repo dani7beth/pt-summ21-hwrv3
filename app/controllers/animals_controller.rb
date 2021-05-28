@@ -37,6 +37,7 @@ class AnimalsController < ApplicationController
       redirect_to [@exhibit, @animal]
     else
       render :edit
+    end
   end
   #DELETE
   def destroy
